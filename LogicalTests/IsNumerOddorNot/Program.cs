@@ -10,7 +10,7 @@ do
 {
     Console.WriteLine("Ingrese un numero para ver si es par, o presione salir para salir");
     numberStrin = Console.ReadLine();
-    if(numberStrin!.ToLower() == "salir" )//el tolower convierte todo a minuscula
+    if(numberStrin!.ToLower() == "salir" )//el tolower convierte todo a minuscula para evitar errores 
     {
         continue;//este continue lo que haces es que si la condicion es correcta pasa directamente
                  //a la condicion del do while
