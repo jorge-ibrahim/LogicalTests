@@ -1,27 +1,19 @@
-﻿
-  using Shared;
+﻿using Shared;
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
 
 do
 {
-    Console.WriteLine("Ingrese 3 números diferentes");
     var a = ConsoleExtension.GetInt("Ingrese primer número : ");
     var b = ConsoleExtension.GetInt("Ingrese segundo número: ");
-    var c = ConsoleExtension.GetInt("Ingrese tercer número : ");
-
-    if (a > b && a > c)
+    if (b % a == 0)
     {
-        Console.WriteLine($"El número mayor es: {a}");
-    }
-    else if (b > a && b > c)
-    {
-        Console.WriteLine($"El número mayor es: {b}");
+        Console.WriteLine($"{a} es múltiplo {b}");
     }
     else
     {
-        Console.WriteLine($"El número mayor es: {c}");
+        Console.WriteLine($"{a} no es múltiplo {b}");
     }
 
     do
